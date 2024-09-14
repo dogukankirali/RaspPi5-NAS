@@ -24,14 +24,25 @@
 
 5. From the modem interface, under **DHCP settings**, assign a static IP to the Raspberry Pi connected to the network (it should appear with the hostname you set). This prevents the IP from changing after each reboot.
 
-6. From a computer on the same network, open a terminal and run the command ```ssh username@raspberry-pi-ip``` to establish an SSH connection.
+6. From a computer on the same network, open a terminal and run the command 
+   ```sh 
+   ssh username@raspberry-pi-ip
+   ``` 
+   to establish an SSH connection.
 
 7. When prompted with "Are you sure you want to continue connecting (yes/no/[fingerprint])?", type **yes** and continue. Then enter the password you set for the user.
 
-8. After logging into the device, run the command `sudo apt update && sudo apt upgrade`.  
+8. After logging into the device, run the command 
+   ```sh 
+   sudo apt update && sudo apt upgrade
+   ```
    _(You may be asked questions during the process. Respond with Y or yes.)_
 
-9. Then, run the command ```sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash``` to install **OpenMediaVault**.  
+9.  Then, run the command 
+    ```sh 
+    sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
+    ```
+     to install **OpenMediaVault**.  
    _(This process may take some time.)_
 
 10. After installation, wait for the device to reboot itself. Once rebooted, log in again via SSH.
@@ -56,7 +67,10 @@
 
 18. In **Storage -> Shared Folders**, select the relevant folder and go to **Access Control List**. Check the **Recursive** box and save.
 
-19. Go back to the terminal connected via SSH and run the command ```curl -fsSL https://get.casaos.io | sudo bash```.
+19. Go back to the terminal connected via SSH and run the command 
+    ```sh 
+    curl -fsSL https://get.casaos.io | sudo bash
+    ```
 
 20. Once the installation is complete, access the Raspberry Pi IP through a browser (without specifying a port). Create a user.
 
@@ -90,14 +104,26 @@
 
 5. Modem arayüzünden **DHCP ayarları** içerisinden, ağa bağlanmış Raspberry Pi'a (hostname ile gözükmeli) statik IP verilerek, her boot işleminden sonra IP değişmesi engellenir.
 
-6. Aynı ağa bağlı bilgisayarınız ile bir terminal açarak, ```ssh username@raspberry-pi-ip``` komutuyla SSH bağlantısı açılır.
+6. Aynı ağa bağlı bilgisayarınız ile bir terminal açarak, 
+   ```sh 
+   ssh username@raspberry-pi-ip
+   ``` 
+   komutuyla SSH bağlantısı açılır.
 
 7. "Are you sure you want to continue connecting (yes/no/[fingerprint])?" sorusuna **yes** diyerek devam edilir. Daha sonra belirlediğiniz kullanıcı şifresi girilir.
 
-8. Cihaza giriş yapıldıktan sonra `sudo apt update && sudo apt upgrade` komutu çalıştırılır.  
+8. Cihaza giriş yapıldıktan sonra 
+   ```sh 
+   sudo apt update && sudo apt upgrade
+   ``` 
+   komutu çalıştırılır.  
    _(İşlem sırasında sorular sorulabilir. Y veya yes şeklinde cevaplanır.)_
 
-9. Daha sonra ```sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash``` komutu ile **OpenMediaVault** kurulur. _(İşlem uzun sürebilir.)_
+9.  Daha sonra 
+    ```sh 
+    sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
+    ``` 
+    komutu ile **OpenMediaVault** kurulur. _(İşlem uzun sürebilir.)_
 
 10. Kurulumdan sonra cihazın kendine reboot atması beklenir. Reboot'tan sonra tekrar SSH ile giriş yapılır.
 
@@ -120,8 +146,12 @@
 
 18. **Storage -> Shared Folders** altından ilgili klasör seçilerek **Access Control List**'e gidilir. Orada **Recursive** tiklenerek kaydedilir.
 
-19. Daha sonra SSH ile bağlandığınız terminale dönülerek ```curl -fsSL https://get.casaos.io | sudo bash``` komutu çalıştırılır.
+19. Daha sonra SSH ile bağlandığınız terminale dönülerek 
+    ```sh 
+    curl -fsSL https://get.casaos.io | sudo bash
+    ``` 
+    komutu çalıştırılır.
 
-20. Kurulum bittikten sonra Raspberry Pi'a verdiğiniz IP'ye tarayıcı ile gidilir (port vermeden). Kullanıcı oluşturulur.
+20.  Kurulum bittikten sonra Raspberry Pi'a verdiğiniz IP'ye tarayıcı ile gidilir (port vermeden). Kullanıcı oluşturulur.
 
 ### İşlem tamam!
