@@ -24,14 +24,14 @@
 
 5. From the modem interface, under **DHCP settings**, assign a static IP to the Raspberry Pi connected to the network (it should appear with the hostname you set). This prevents the IP from changing after each reboot.
 
-6. From a computer on the same network, open a terminal and run the command `ssh username@raspberry-pi-ip` to establish an SSH connection.
+6. From a computer on the same network, open a terminal and run the command ```ssh username@raspberry-pi-ip``` to establish an SSH connection.
 
 7. When prompted with "Are you sure you want to continue connecting (yes/no/[fingerprint])?", type **yes** and continue. Then enter the password you set for the user.
 
 8. After logging into the device, run the command `sudo apt update && sudo apt upgrade`.  
    _(You may be asked questions during the process. Respond with Y or yes.)_
 
-9. Then, run the command `sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash` to install **OpenMediaVault**.  
+9. Then, run the command ```sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash``` to install **OpenMediaVault**.  
    _(This process may take some time.)_
 
 10. After installation, wait for the device to reboot itself. Once rebooted, log in again via SSH.
@@ -56,7 +56,7 @@
 
 18. In **Storage -> Shared Folders**, select the relevant folder and go to **Access Control List**. Check the **Recursive** box and save.
 
-19. Go back to the terminal connected via SSH and run the command `curl -fsSL https://get.casaos.io | sudo bash`.
+19. Go back to the terminal connected via SSH and run the command ```curl -fsSL https://get.casaos.io | sudo bash```.
 
 20. Once the installation is complete, access the Raspberry Pi IP through a browser (without specifying a port). Create a user.
 
