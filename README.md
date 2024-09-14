@@ -90,14 +90,14 @@
 
 5. Modem arayüzünden **DHCP ayarları** içerisinden, ağa bağlanmış Raspberry Pi'a (hostname ile gözükmeli) statik IP verilerek, her boot işleminden sonra IP değişmesi engellenir.
 
-6. Aynı ağa bağlı bilgisayarınız ile bir terminal açarak, `ssh username@raspberry-pi-ip` komutuyla SSH bağlantısı açılır.
+6. Aynı ağa bağlı bilgisayarınız ile bir terminal açarak, ```ssh username@raspberry-pi-ip``` komutuyla SSH bağlantısı açılır.
 
 7. "Are you sure you want to continue connecting (yes/no/[fingerprint])?" sorusuna **yes** diyerek devam edilir. Daha sonra belirlediğiniz kullanıcı şifresi girilir.
 
 8. Cihaza giriş yapıldıktan sonra `sudo apt update && sudo apt upgrade` komutu çalıştırılır.  
    _(İşlem sırasında sorular sorulabilir. Y veya yes şeklinde cevaplanır.)_
 
-9. Daha sonra `sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash` komutu ile **OpenMediaVault** kurulur. _(İşlem uzun sürebilir.)_
+9. Daha sonra ```sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash``` komutu ile **OpenMediaVault** kurulur. _(İşlem uzun sürebilir.)_
 
 10. Kurulumdan sonra cihazın kendine reboot atması beklenir. Reboot'tan sonra tekrar SSH ile giriş yapılır.
 
@@ -120,7 +120,7 @@
 
 18. **Storage -> Shared Folders** altından ilgili klasör seçilerek **Access Control List**'e gidilir. Orada **Recursive** tiklenerek kaydedilir.
 
-19. Daha sonra SSH ile bağlandığınız terminale dönülerek `curl -fsSL https://get.casaos.io | sudo bash` komutu çalıştırılır.
+19. Daha sonra SSH ile bağlandığınız terminale dönülerek ```curl -fsSL https://get.casaos.io | sudo bash``` komutu çalıştırılır.
 
 20. Kurulum bittikten sonra Raspberry Pi'a verdiğiniz IP'ye tarayıcı ile gidilir (port vermeden). Kullanıcı oluşturulur.
 
